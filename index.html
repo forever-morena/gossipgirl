@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Grid Layout with Scrollable Content View | Codrops</title>
+		<meta name="description" content="A Masonry-powered grid layout with a motion hover effect on the grid items and a scrollable content view." />
+		<meta name="keywords" content="masonry, grid layout, hover effect, content preview, javascript, gsap, template, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+	</head>
+	<body class="loading"> 
+		<main>
+			<div class="frame">
+				<header class="codrops-header">
+					<h1 class="codrops-header__title">Gossip Girl here, your one and only source into the scandalous lives of Manhattan's elite... And who am I? That's one secret I'll never tell. You know you love me. XOXO, Gossip Girl.</h1>
+					<div class="codrops-links">
+						<a class="codrops-icon codrops-icon--prev" href="https://tympanus.net/Development/DiagonalSlideshow/" title="Previous Demo"><svg class="icon icon--arrow"><use xlink:href="#icon-arrow"></use></svg></a>
+						<a class="codrops-icon codrops-icon--drop" href="https://tympanus.net/codrops/?p=35959" title="Back to the article"><svg class="icon icon--drop"><use xlink:href="#icon-drop"></use></svg></a>
+						<a class="github" href="https://github.com/codrops/GridLayoutScrollableContent/" title="Find this project on GitHub"><svg class="icon icon--github"><use xlink:href="#icon-github"></use></svg></a>
+					</div>
+				</header>
+				<div class="title">
+					<h3 class="title__name">gossip girl</h3>
+				</div>
+			</div>
+			<div class="grid-wrap">
+				<div class="grid">
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/b y c.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Blair & Chuck</h3>
+						<h4 class="grid__item-number">B&C</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/sleep.jpeg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Serena & Lonely Boy</h3>
+						<h4 class="grid__item-number">S&Dan</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/jenny.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Jenny & Nate</h3>
+						<h4 class="grid__item-number">LittleJ&N</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/mom.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Chuck & mom</h3>
+						<h4 class="grid__item-number">C&Mom</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/marry.jpeg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Rufus & Lily</h3>
+						<h4 class="grid__item-number">R&L</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/jack.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Jack Bass</h3>
+						<h4 class="grid__item-number">Bass</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/graduation.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Everyone</h3>
+						<h4 class="grid__item-number">EVERYONE</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/serena.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Serena Van der Woodsen</h3>
+						<h4 class="grid__item-number">S-TAR</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/blair.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Blair Waldorf</h3>
+						<h4 class="grid__item-number">Queen B</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/lonely.jpeg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Serena & Lonely Boy</h3>
+						<h4 class="grid__item-number">S&Dan</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/lord.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Blair & the lord</h3>
+						<h4 class="grid__item-number">B&Lord</h4>
+					</a>
+					<a href="#" class="grid__item">
+						<div class="grid__item-bg"></div>
+						<div class="grid__item-wrap">
+							<img class="grid__item-img" src="img/heart.jpg" alt="Some image" />
+						</div>
+						<h3 class="grid__item-title">Blair & Chuck</h3>
+						<h4 class="grid__item-number">B&C</h4>
+					</a>
+				</div>
+			</div><!-- /grid-wrap -->
+			<div class="content">
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/b y c.jpg" alt="Some image" />
+						<h2 class="content__item-title">Blair & Chuck</h2>
+					</div>
+					<h3 class="content__item-subtitle">"B & C in Paris"</h3>
+					<div class="content__item-text">
+						<p>Spotted: Blair Waldorf meets Chuck Bass on the train statiton in Paris. Apparently Blair conviced Chuck to go back home to New York.</p>
+						<p>Just as every summer ends, all tourists come home. All dreamers wake up. And new problems are born.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/sleep.jpeg" alt="Some image" />
+						<h2 class="content__item-title">Exes sleeping together</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Literally sleeping, S & Lonely Boy"</h3>
+					<div class="content__item-text">
+						<p>Spotted: A family reunion only Faulkner would approve of. I used to think that S and Lonely Boy were the most boring couple on the Upper East Side. But what makes them actually great together, is when they’re supposed to be with other people.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/jenny.jpg" alt="Some image" />
+						<h2 class="content__item-title">There are no rules</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Little J is going for Nate Archibald"</h3>
+					<div class="content__item-text">
+						<p>Uh oh, S. Looks like Little J’s knives are sharpened. And she’s ready to use them in the battle for Nate Archibald. In matters of love and war, all weapons cause injury. The questions is, who will live to fight another day. XOXO — Gossip Girl</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/mom.jpg" alt="Some image" />
+						<h2 class="content__item-title">Family reunion</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Will it last?"</h3>
+					<div class="content__item-text">
+						<p>Spotted: Chuck Bass breaking bread with his mother. Looks like our Little Boy Lost is finally found. For now at least. XOXO —Gossip Girl</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/marry.jpeg" alt="Some image" />
+						<h2 class="content__item-title">The happy couple</h2>
+					</div>
+					<h3 class="content__item-subtitle">"FINALLY."</h3>
+					<div class="content__item-text">
+						<p>Put on those dancing shoes, kids. Looks like we’re going to the chapel. Spotted: A family reunited. And it feels so good.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/jack.jpg" alt="Some image" />
+						<h2 class="content__item-title">Uncle Bass</h2>
+					</div>
+					<h3 class="content__item-subtitle">"He is back in action"</h3>
+					<div class="content__item-text">
+						<p>We hear Chuck’s hotel is hanging on by a thread. And Jack’s pulling all the strings.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/graduation.jpg" alt="Some image" />
+						<h2 class="content__item-title">Labels</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Giving my diplomas"</h3>
+					<div class="content__item-text">
+						<p>Not so fast. You’re not graduating until I give you my diplomas. Mine are labels, and labels stick. Nate Archibald: Class whore. Dan Humphrey: The ultimate insider. Chuck Bass: Coward. Blair Waldorf: Weakling. And as for Serena van der Woodsen, after today, you are officially irrelevant. Congratulations, everyone. You deserve it.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/serena.jpg" alt="Some image" />
+						<h2 class="content__item-title">The star is back</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Summer over"</h3>
+					<div class="content__item-text">
+						<p>Welcome back, Upper East Siders. As for Serena van der Woodsen, you left America a star. But after your exploits in Europe you’ve come back a supernova. And yet nothing explodes without a fuse. I wonder what—or who—lit yours.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/blair.jpg" alt="Some image" />
+						<h2 class="content__item-title">One queen, two knights</h2>
+					</div>
+					<h3 class="content__item-subtitle">"The choice"</h3>
+					<div class="content__item-text">
+						<p>Queen of Hearts or Queen of Heartache? Careful B, cut off the head of one love triangle, one of your own might grow back in its place. Sometimes a queen has to make a choice: a castle with a white knight. Or a quest with a dark prince. So B, what’ll it be? Netflix night with Nate or battling a beast with Bass?</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/lonely.jpeg" alt="Some image" />
+						<h2 class="content__item-title">Back together?</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Rewind New Year"</h3>
+					<div class="content__item-text">
+						<p>Spotted: S. and Lonely Boy kicking off the New Year like it’s last year. Who knows, maybe third time’s a charm. But let’s not break out the bubbly just yet.</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/lord.jpg" alt="Some image" />
+						<h2 class="content__item-title">The truth of the couple</h2>
+					</div>
+					<h3 class="content__item-subtitle">"SCANDAL"</h3>
+					<div class="content__item-text">
+						<p>Wanna hear the sickest scandal ever? Remember B’s Lord? Turns out he was giving the royal treatment to his own Queen Mother. And the worst part? B knew and ignored it. How desperate can you be, B?</p>
+					</div>
+				</div><!-- /content__item -->
+				<div class="content__item">
+					<div class="content__item-intro">
+						<img class="content__item-img" src="img/heart.jpg" alt="Some image" />
+						<h2 class="content__item-title">Two hearts dancing</h2>
+					</div>
+					<h3 class="content__item-subtitle">"Will it happen?"</h3>
+					<div class="content__item-text">
+						<p>Spotted: Queen B dancing with Chuck Bass, is it the beginning of a romance?</p>
+						
+					</div>
+				</div><!-- /content__item -->
+				<button class="content__close">Close</button>
+				<svg class="content__indicator icon icon--caret"><use xlink:href="#icon-caret"></use></svg>
+			</div>
+		</main>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/masonry.pkgd.min.js"></script>
+		<script src="js/charming.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/demo.js"></script>
+	</body>
+</html>
